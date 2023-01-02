@@ -1,0 +1,52 @@
+
+.education {
+    width: 90%;
+    margin: auto;
+    padding: 100px 0;
+}
+.education span{
+    color: #64FFDA;
+}
+.education h2::after {
+    content: '';
+    display: inline-block;
+    width: 40%;
+    height: 2px;
+    margin-left: 10px;
+    background-color: #233554;
+}
+.educationYear {
+    margin-bottom: 0;
+    list-style: none;
+}
+.educationYear li {
+    border-left: 2px solid #233554;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+.educationYear li:hover {
+    cursor: pointer;
+    color: #64FFDA;
+    border-left: 2px solid #64FFDA;
+    background-color: #233554;
+}
+.educationDisc p:first-of-type {
+    font-size: 18px;
+    color:  #CCD6F6;
+    margin-top: 10px;
+}
+.bi-caret-right-fill {
+    color: #64FFDA;
+    font-size: 10px;
+    margin-right: 4px;
+}
+@media only screen and (max-width: 576px) {
+    .education {
+        padding: 50px 0;
+    }
+    .education h2::after {
+        content: '';
+        display: none;
+    }
+}
+

@@ -1,0 +1,23 @@
+.projects {
+    width: 90%;
+    margin: auto;
+    padding: 100px 0;
+}
+.projects h2::after {
+    content: '';
+    display: inline-block;
+    width: 40%;
+    height: 2px;
+    margin-left: 10px;
+    background-color: #233554;
+}
+
+@media only screen and (max-width: 576px) {
+    .projects {
+        padding: 50px 0;
+    }
+    .projects h2::after {
+        content: '';
+        display: none;
+    }
+}

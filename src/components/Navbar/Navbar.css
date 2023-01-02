@@ -1,0 +1,19 @@
+.navbar {
+    background-color:  #112240 !important;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.btn {
+    color: #64FFDA !important;
+}
+
+.nbr {
+    color: #64FFDA !important;
+}
+.nav-link {
+    color: #CCD6F6 !important;
+}
+
+.active {
+    color: #64FFDA !important;
+}

@@ -1,0 +1,67 @@
+.aboutContainer {
+    width: 90%;
+    margin: auto;
+    padding: 100px 0;
+}
+h2 {
+    text-align: center;
+    color:  #CCD6F6;
+    font-size: 29px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.aboutContainer h2::after {
+    content: '';
+    display: inline-block;
+    width: 40%;
+    height: 2px;
+    margin-left: 10px;
+    background-color: #233554;
+}
+h2 span {
+    color: #64FFDA;
+    font-weight: 300;
+}
+.avatar {
+    height: 140px;
+    width: 140px;
+    margin-bottom: 20px;
+}
+.avatar img {
+    position: absolute;
+    background-color: #CCD6F6;
+    height: 140px;
+    width: 130px;
+    border-radius: 3px;
+    top: 12px;
+    right: 3px;
+    z-index: 3;
+}
+.avatarBorder {
+    height: 140px;
+    width: 140px;
+    border-radius: 3px;
+    border: 2px solid #64FFDA;
+}
+.technology img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.technology p {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 576px) {
+    .aboutContainer {
+        padding: 50px 0;
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+    .aboutContainer h2::after {
+        content: '';
+        display: none;
+    }
+}

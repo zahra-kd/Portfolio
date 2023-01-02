@@ -1,0 +1,65 @@
+.contact {
+    width: 90%;
+    margin: auto;
+    padding: 100px 0;
+}
+.contact h2::after {
+    content: '';
+    display: inline-block;
+    width: 40%;
+    height: 2px;
+    margin-left: 10px;
+    background-color: #233554;
+}
+.contactIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color:  #09152b;
+}
+.contactIcon i {
+    color: #64FFDA;
+}
+.contactIcon:hover {
+    background-color: #64FFDA;
+}
+.contactIcon:hover i {
+    color: #09152b;
+}
+.contactDetail h4, .contactDetail p {
+    margin-bottom: 0;
+} 
+.contactDetail p:first-of-type {
+    font-size: 18px;
+    font-weight: 600;
+    color: #CCD6F6;
+}
+
+.form-control {
+    background-color: #09152b !important;
+    /* outline: none !important; */
+    margin-bottom: 10px;
+    border: 1px solid #8892B0 !important;
+}
+.btn-primary {
+    background-color: #09152b !important;
+    border: 1px solid #8892B0 !important;
+}
+.btn-primary:hover {
+    background-color:  #64FFDA !important;
+    color: #09152b !important;
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
+    .contact {
+        padding: 50px 0;
+    }
+    .contact h2::after {
+        content: '';
+        display: none;
+    }
+}
