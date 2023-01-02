@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Education.css'
 
 const years = [2022, 2021, 2020, 2017, 2014, 2011]
@@ -33,8 +33,9 @@ const Education = () =>{
     const diplomaGenerator = (index) => {
         setIndex(index)
     }
+
     return (
-        <div id='EductionSection' className='education container d-flex flex-column align-items-center'>
+        <div data-aos="fade-up" data-aos-duration="1500" id='EductionSection' className='education container d-flex flex-column align-items-center'>
             <h2 className='col-10 text-center text-md-start'><span className='fs-4 me-3'>0.2</span>Education</h2>
             <div className='row col-11 col-md-8'>
                 <ul className='educationYear col-3 col-md-2 text-center'>

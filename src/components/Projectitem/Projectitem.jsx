@@ -4,7 +4,7 @@ import './Projectitem.css'
 
 const Projectitem = (props) =>{
     return(
-        <div className='gy-2 col-8 col-lg-4 col-md-6 d-flex flex-column align-items-center mx-auto'>
+        <div data-aos="flip-right"  data-aos-duration="1500" className='gy-2 col-8 col-lg-4 col-md-6 d-flex flex-column align-items-center mx-auto'>
             <div className='ProjectContainer container p-0 text-center position-relative'>
                 <img src={props.path} alt="project picture"/>
                 <div className='ProjectCover d-flex align-items-center justify-content-center'>

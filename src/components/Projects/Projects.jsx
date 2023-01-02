@@ -42,7 +42,7 @@ const Projects = () => {
             <div className='row col-10 align-self-center'>
                 {ProjectElement.map((element) =>{
                     return(
-                        <Projectitem key={element.title} path={element.url} title={element.title}  href={element.projectRef} />
+                        <Projectitem  key={element.title} path={element.url} title={element.title}  href={element.projectRef} />
                     )
                 })}
             </div>

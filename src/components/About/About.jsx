@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './About.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const technologies = [
     {
@@ -33,9 +35,11 @@ const technologies = [
 ]
 
 const About = () =>{
-
+    useEffect(() => {
+        AOS.init();
+        }, [])
     return(
-        <div id='AboutSection' className='container aboutContainer d-flex flex-column align-items-center'>
+        <div  data-aos="fade-up" data-aos-duration="1500" id='AboutSection' className='container aboutContainer d-flex flex-column align-items-center'>
             <h2 className='col-10 text-center text-md-start'><span className='fs-4 me-3'>0.1</span>About</h2>
             <div className='row d-flex justify-content-center'>
                 <div className='avatar text-center me-4 position-relative'>

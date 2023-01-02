@@ -3,7 +3,7 @@ import './Contact.css'
 
 const Contact = () =>{
     return(
-        <div id='ContactSection' className='contact container d-flex flex-column align-items-center'>
+        <div data-aos="fade-up" data-aos-duration="1500" id='ContactSection' className='contact container d-flex flex-column align-items-center'>
             <h2 className='col-10 text-center text-md-start'><span className='fs-4 me-3'>0.4</span>Contact</h2>
             <div className='d-flex justify-content-center row col-11'>
                 <div className='mb-3 col-11 col-lg-4 d-flex justify-content-start align-items-center justify-content-lg-center'>
