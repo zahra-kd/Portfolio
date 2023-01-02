@@ -5,31 +5,31 @@ import 'aos/dist/aos.css';
 
 const technologies = [
     {
-        src: "/image/html.png",
+        src: "image/html.png",
         title :"HTML",
     },
     {
-        src: "/image/css.png",
+        src: "image/css.png",
         title :"CSS",
     },
     {
-        src: "/image/boot.jfif",
+        src: "image/boot.jfif",
         title :"BOOTSTRAP",
     },
     {
-        src: "/image/sass.png",
+        src: "image/sass.png",
         title :"SASS",
     },
     {
-        src: "/image/js.png",
+        src: "image/js.png",
         title :"JAVASCRIPT",
     },
     {
-        src: "/image/jquery.png",
+        src: "image/jquery.png",
         title :"JQUERY",
     },
     {
-        src: "/image/react.png",
+        src: "image/react.png",
         title :"REACT",
     },
 ]
@@ -43,7 +43,7 @@ const About = () =>{
             <h2 className='col-10 text-center text-md-start'><span className='fs-4 me-3'>0.1</span>About</h2>
             <div className='row d-flex justify-content-center'>
                 <div className='avatar text-center me-4 position-relative'>
-                    <img src="/image/picture.png" alt="avatar" />
+                    <img src="image/picture.png" alt="avatar" />
                     <div className='avatarBorder'></div>
                 </div>
                 <div className='about col-10 col-lg-6 col-md-8 '>

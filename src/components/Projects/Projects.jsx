@@ -4,32 +4,32 @@ import Projectitem from '../Projectitem/Projectitem'
 
 const ProjectElement = [
 {
-    url:"/image/calculator.png",
+    url:"image/calculator.png",
     title: "HTML - CSS - JAVASCRIPT",
     projectRef:"https://zahra-kd.github.io/calculator/",
 },
 {
-    url:"/image/devinette.png",
+    url:"image/devinette.png",
     title: "HTML - CSS - JAVASCRIPT",
     projectRef:"https://zahra-kd.github.io/devinette/",
 },
 {
-    url:"/image/forkify.png",
+    url:"image/forkify.png",
     title: "HTML - CSS - BOOTSTRAP - JQUERY",
     projectRef:"https://zahra-kd.github.io/forkify/",
 },
 {
-    url:"/image/e-com.png",
+    url:"image/e-com.png",
     title: "Responsive design: HTML - BOOTSTRAP - SASS",
     projectRef:"https://zahra-kd.github.io/surfside/",
 },
 {
-    url:"/image/photoFolio.png",
+    url:"image/photoFolio.png",
     title:"Responsive design: HTML - BOOTSTRAP",
     projectRef:"https://zahra-kd.github.io/PhotoFolio/",
 },
 {
-    url:"/image/trello.png",
+    url:"image/trello.png",
     title:"HTML - SASS",
     projectRef:"https://zahra-kd.github.io/trello/"
 }]
