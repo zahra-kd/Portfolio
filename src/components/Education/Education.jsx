@@ -1,38 +1,29 @@
 import React, { useEffect, useState } from 'react'
 import './Education.css'
+import { firestore } from "../../config/firebase";
+import { collection, onSnapshot, query, orderBy } from 'firebase/firestore';
+
 
 const years = [2022, 2021, 2020, 2017, 2014, 2011]
-const diploma = [{
-    title: "Bootcamp Full-Stack Web Developer",
-    place: "3W ACADEMY - Rabat",
-},
-{
-    title: "TCF certificate (test de connaissance du Français) - level C2",
-    place: "INSTITUT FRANÇAIS - Rabat",
-},
-{
-    title: "TOEIC listening and reading certificate – total score 860/990",
-    place: "AMERICA-MIDEAST EDUCATIONAL AND TRAINING SERVICES - Rabat",
-},
-{
-    title: "Master degree in international trade and logistics",
-    place: "IBN TOFAIl UNIVERSITY – ENCG kenitra",
-},
-{
-    title: "Bachlor degree in management science",
-    place: "MOHAMMED V UNIVERSITY UNIVERSITY – Rabat",
-},
-{
-    title: "Baccalaureat physics major",
-    place: "MOULAY ABDELLAH HIGH SCHOOL - Rabat",
-}
-]
 
 const Education = () =>{
     const [index, setIndex] = useState(0)
+    const [diploma, setDiploma] = useState([])
+
     const diplomaGenerator = (index) => {
         setIndex(index)
     }
+    
+    useEffect(() => {
+        const q = query(collection(firestore, "education"), orderBy("number", "asc"))
+        onSnapshot(q, querySnapshot=>{
+            const firebaseEducation = []
+            querySnapshot.forEach(element => {
+                firebaseEducation.push(element.data())
+            });
+            setDiploma(firebaseEducation);
+        })
+    }, [])
 
     return (
         <div data-aos="fade-right" data-aos-duration="1500" id='EductionSection' className='education container d-flex flex-column align-items-center'>
@@ -46,8 +37,8 @@ const Education = () =>{
                     })}
                 </ul>
                 <div className='educationDisc col-9'>
-                    <p><i class="bi bi-caret-right-fill"></i>{diploma[index].title}</p>
-                    <p>{diploma[index].place}</p>
+                    <p><i class="bi bi-caret-right-fill"></i>{diploma[index]?.title}</p>
+                    <p>{diploma[index]?.place}</p>
                 </div>
             </div>    
         </div>
